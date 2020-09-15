@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req,res)=>{
-    res.send("This is Dev Panda: Welcome back after the freaking Covid lockdown, have a bear");
+    res.send("This is Dev Box: Welcome back after the freaking Covid lockdown, have a bear");
 });
 
 app.listen(3000, ()=>{
