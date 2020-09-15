@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-        docker { image 'node:14-alpine' }
-    }
+   
     stages {
         stage('Test') {
             steps {
@@ -12,7 +10,7 @@ pipeline {
             steps {
                 git 'https://github.com/diemonch/jsdev.git'
                 sh 'npm install' 
-                sh 'npm test'
+                sh 'node index.js'
                 }
         }
     }
