@@ -12,6 +12,7 @@ pipeline {
             steps {
                 git 'https://github.com/diemonch/jsdev.git'
                 sh 'npm init' 
+                sh 'npm install'
                 sh 'node index.js'
                 }
         }
