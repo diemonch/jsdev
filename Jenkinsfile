@@ -3,8 +3,9 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
+                git 'https://github.com/diemonch/jsdev.git'
                 sh 'npm install' 
-                sh 'docker ps'
+                sh 'sudo docker ps'
             }
         }
     }
