@@ -10,8 +10,6 @@ pipeline {
         }
          stage('Build') { 
             steps {
-                git 'https://github.com/diemonch/jsdev.git'
-                sh 'npm init' 
                 sh 'npm install npm@latest -g'
                 sh 'node index.js'
                 }
